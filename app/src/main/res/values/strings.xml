@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Vent Calc</string>
+        <string name="animal">Select weight</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="animal_array">
+        <item>Swine</item>
+        <item>Laying hen</item>
+        <item>Broilers</item>
+    </string-array>
+    <string-array name="swine_average">
+        <item>5kg</item>
+        <item>10kg</item>
+        <item>20kg</item>
+        <item>30kg</item>
+        <item>50kg</item>
+        <item>70kg</item>
+        <item>90kg</item>
+    </string-array>
+    <string-array name="layingHen_average">
+        <item>1.4kg</item>
+        <item>1.5kg</item>
+        <item>2.0kg</item>
+    </string-array>
+    <string-array name="broilers_average">
+        <item>0.1kg</item>
+        <item>1.0kg</item>
+        <item>1.5kg</item>
+    </string-array>
+    <string-array name="building_array">
+        <item>Hollowblock</item>
+        <item>Timber</item>
+        <item>Plywood</item>
+        <item>Brick</item>
+    </string-array>
+</resources>

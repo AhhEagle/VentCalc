@@ -1,0 +1,313 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        tools:context="com.example.mypc.myapplication.MainActivity"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="20sp"
+            android:text="Animal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignParentTop="true"
+            android:entries="@array/animal_array"
+            android:paddingLeft="160sp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text0"
+            android:paddingBottom="20sp"
+            android:text="Number of Livestocks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text1"
+            android:layout_toEndOf="@+id/text1"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text1"
+            android:paddingBottom="20dp"
+            android:text="Length of room"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text2"
+            android:layout_toEndOf="@+id/text2"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text2"
+            android:paddingBottom="20sp"
+            android:text="Breath of room"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text3"
+            android:layout_toEndOf="@+id/text3"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text3"
+            android:paddingBottom="20sp"
+            android:text="Height of room"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text4"
+            android:layout_toEndOf="@+id/text4"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text4"
+            android:paddingBottom="20sp"
+            android:text="Inside Temperature "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text5"
+            android:layout_toEndOf="@+id/text5"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text5"
+            android:paddingBottom="20sp"
+            android:text="Outside Temperature"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text6"
+            android:layout_toEndOf="@+id/text6"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text6"
+            android:paddingBottom="20sp"
+            android:text="Relative humidity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text7"
+            android:layout_toEndOf="@+id/text7"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text7"
+            android:paddingBottom="20sp"
+            android:text="Building Material"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text8"
+            android:paddingBottom="20sp"
+            android:text="Height above sea level (atm pressure)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerBuilding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerAnimal"
+            android:layout_alignTop="@+id/text8"
+            android:entries="@array/building_array"
+            android:paddingLeft="160sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text9"
+            android:hapticFeedbackEnabled="true"
+            android:max="750"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/seekBar"
+            android:paddingBottom="20sp"
+            android:text="Sensible heat from Motor+Light+Heater"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text10"
+            android:layout_toEndOf="@+id/text10"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text10"
+            android:paddingBottom="20sp"
+            android:text="Sensible heat from Sun+Ventilation System"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text11"
+            android:layout_toEndOf="@+id/text11"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text9"
+            android:layout_alignBottom="@+id/text9"
+            android:layout_toEndOf="@+id/text9"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text11"
+            android:paddingBottom="20sp"
+            android:text="Average Weight of Animal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text11"
+            android:layout_toEndOf="@+id/text0"
+            android:entries="@array/swine_average"
+            android:paddingLeft="160sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text9"
+            android:layout_below="@+id/text12"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_answer"
+            android:layout_alignBottom="@+id/tv_answer"
+            android:layout_toStartOf="@+id/editText7"
+            android:text="Ventilation Rate ="
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <EditText
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_toEndOf="@+id/text1"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </RelativeLayout>
+
+</ScrollView>
